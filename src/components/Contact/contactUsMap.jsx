@@ -1,27 +1,17 @@
 import React from "react";
-import mapImage from "../../images/contactUs/mapImage.png";
 
 const ContactUsMap = () => {
-  const handleMapClick = () => {
-    window.open(
-      "https://www.google.com/maps/dir//...",
-      "_blank"
-    );
-  };
-
   return (
     <>
-    <div className="text-4xl md:text-6xl text-center text-blue-600">Find US</div>
-    <div
-      className="cursor-pointer flex justify-center items-center w-full h-64 mb-5"
-      onClick={handleMapClick}
-    >
-      <img
-        src={mapImage}
-        alt="Map"
-        className="xl:w-[700px] md:w-[600px] sm:w-[448px] h-full object-cover hover:opacity-90 rounded-lg overflow-hidden border-4 border-blue-500 transition-opacity"
-      />
-    </div>
+      <h1 className='text-4xl font-extrabold text-center md:mt-5'>FIND US</h1>
+      <iframe
+        title="IOE Thapathali Campus Map"
+        className="sm:w-[500px] md:w-[600px] xl:w-[700px] aspect-video mx-auto mb-10 border-2 sm:border-[5px] border-blue-500 shadow-boxShadow"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7527841083115!2d85.31625117617291!3d27.694034676190054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19ae08c068d9%3A0x475bed1f66d060c!2sIOE%2C%20Thapathali%20Campus!5e0!3m2!1sen!2snp!4v1720262496739!5m2!1sen!2snp"
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
     </>
   );
 };

@@ -1,5 +1,5 @@
 import machineLearning from '../images/gallery/Machine Learning Workshop/cover.jpg'
-import dataUnleashed from '../images/gallery/Data Unleashed/1.png'
+import dataUnleashed from '../images/gallery/Data Unleashed/cover.png'
 import docker from '../images/gallery/Docker/cover.png'
 import pythonAutomation from '../images/gallery/Python Automation/cover.png'
 import webDevelopment from '../images/gallery/Web Development/cover.jpg'

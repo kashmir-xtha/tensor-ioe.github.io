@@ -3,7 +3,7 @@ import testimonies from '../../constants/Testimonies'
 const HomeTestimonialsTemplate = () => {
     return (
         <>
-            <h1 className="text-4xl font-extrabold text-center">Testimonials</h1>
+            <h1 className="text-4xl font-extrabold text-center">TESTIMONIALS</h1>
             <div className="w-[90vw] xl:w-width mx-auto mb-10 relative">
                 <div className="show-scrollbar pb-3 whitespace-nowrap overflow-y-hidden">
                     {testimonies.map((item, index) => {

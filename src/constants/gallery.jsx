@@ -19,6 +19,7 @@ const galleryObject = (name, object) => {  // this will create object with title
     return newObject
 }
 // adding all the directory containing events's photos and storing as object references
+const sv = nameFile(require.context('../images/gallery/School Visit', false, /\.(png|jpe?g|svg)$/));
 const ml = nameFile(require.context('../images/gallery/Machine Learning Workshop', false, /\.(png|jpe?g|svg)$/));
 const du = nameFile(require.context('../images/gallery/Data Unleashed', false, /\.(png|jpe?g|svg)$/));
 const d = nameFile(require.context('../images/gallery/Docker', false, /\.(png|jpe?g|svg)$/));
@@ -27,6 +28,7 @@ const ud = nameFile(require.context('../images/gallery/UI UX Design', false, /\.
 const wd = nameFile(require.context('../images/gallery/Web Development', false, /\.(png|jpe?g|svg)$/));
 
 const gallery = [
+    galleryObject('School Visit', sv),
     galleryObject('Machine Learning', ml),
     galleryObject('Data Unleashed', du),
     galleryObject('Docker', d),

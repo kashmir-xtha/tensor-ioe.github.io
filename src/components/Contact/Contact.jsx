@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className='text-4xl font-extrabold text-center mt-10 mb-10 relative'>CONTACT US</h1>
-      <div className="flex flex-col gap-10 w-full max-w-3xl">
+      <div className="w-auto xl:w-width mx-auto flex flex-col gap-10">
         <ContactUsForm />
         <ContactUsMap />
       </div>

@@ -45,8 +45,8 @@ const Events = () => {
             <img onClick={() => setOverlay('hidden')} className="max-sm:w-4 w-6 absolute max-sm:top-[45%] top-1/2 -translate-y-1/2 right-7 cursor-pointer" src={close} alt="closeBtn" />
             <h1 className="max-sm:text-xl max-sm:leading-[60px] text-3xl text-center font-bold leading-[70px] bg-[#1360A5AB] border-b-4">{event.title}</h1>
           </div>
-          <div className="w-full h-full flex max-sm:flex-col text-black">
-            <div className="max-sm:w-[60vw] w-2/5 py-4 px-10 mx-auto">
+          <div className="w-full h-full flex max-md:flex-col text-black">
+            <div className="max-sm:w-[80vw] max-md:w-[60vw] w-2/5 p-5 max-sm:px-10 mx-auto">
               <NavLink to="/gallery">
                 <div className='group w-full relative mb-2 hover:cursor-pointer'>
                   <img className="w-full aspect-[4/3] rounded-xl" src={event.eventImage} alt="Event here" />
@@ -57,7 +57,7 @@ const Events = () => {
               </NavLink>
               <h1 className="max-md:text-sm text-xl text-center font-bold">{event.date}</h1>
             </div>
-            <div className="max-sm:w-full w-3/5 h-full max-md:text-sm max-sm:border-t-4 sm:border-l-4 pt-3 pb-20 px-10 text-justify overflow-scroll">
+            <div className="max-md:w-full w-3/5 h-full max-md:text-sm max-md:border-t-4 sm:border-l-4 pt-3 pb-20 px-10 text-justify overflow-scroll">
               {event.description}
             </div>
           </div>
